@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Requête AJAX</title>
+    <script>
+      var run = () => {
+	      fetch("http://localhost:9999/"+document.querySelector("#q").value)
+	      .then(res => res.text())
+        .then(text => document.querySelector("#rep").innerHTML = text)
+	      .catch(err => document.querySelector("#rep").innerHTML = err); 
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Avec Fetch</h1>
+    <p>Entrez votre question : <input type="text" id="q">
+      <button onclick="run();">Exécuter ...</button>
+    </p>
+    <div style="border:solid; text-align:center;" id="rep">???</div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+HTTP/1.0 200 OK
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>à la main...</title>
+  </head>
+  <body>
+    <h1> Voilà !</h1>
+    <p>Un lien <a href="document-2">document-2</a></p>
+  </body>
+</html>
