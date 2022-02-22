@@ -7,7 +7,7 @@
       var run = () => {
 	      fetch("http://localhost:9999/"+document.querySelector("#q").value)
 	      .then(res => res.text())
-        .then(text => document.querySelector("#rep").innerHTML = text)
+              .then(text => document.querySelector("#rep").innerHTML = text)
 	      .catch(err => document.querySelector("#rep").innerHTML = err); 
       };
     </script>
